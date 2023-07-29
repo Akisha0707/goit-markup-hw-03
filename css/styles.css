@@ -29,6 +29,19 @@ button {
     cursor: pointer;
 }
 
+visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .page-body {
     font-family: Roboto, sans-serif;
     color: var(--cloud, #434455);
@@ -196,18 +209,7 @@ button {
     padding: 120px 0;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+
 
 .info_quality {
     display: flex;
@@ -496,8 +498,8 @@ button {
     row-gap: 48px;
 }
 
-.card {
-    width: calc((100%-48px)/3);
+.cards {
+    width: calc((100% - 48px) / 3);
 }
 
 .description_img {
