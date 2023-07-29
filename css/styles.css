@@ -38,6 +38,7 @@ button {
 .page-header {
     padding-top: 25px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .container {
@@ -122,7 +123,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #e7e9fc
+
 }
 
 
@@ -150,7 +151,12 @@ button {
 }
 
 .tagline-section {
-    background: var(--navyblue, #2e2f42);
+    padding-bottom: 120px;
+    padding: 188px 0;
+}
+
+.color-tagline {
+    background: var(--navyblue, #2E2F42);
 }
 
 .tagline {
@@ -174,12 +180,16 @@ button {
     letter-spacing: 0.04em;
     background: var(--iris, #4D5AE5);
     border-radius: 4px;
+    display: block;
     margin-left: 450px;
     margin-bottom: 200px;
     padding-top: 20px;
     padding-bottom: 16px;
     padding-left: 32px;
     padding-right: 32px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .modal-btn:hover,
@@ -210,8 +220,7 @@ button {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .paragraph {
@@ -246,7 +255,7 @@ button {
 }
 
 .employers {
-    padding: 120px;
+    padding: 120px 0;
 }
 
 .info_photo {
@@ -278,7 +287,7 @@ button {
     border-radius: 0px 0px 4px 4px;
 }
 
-.employers-info {
+.employers_info {
     padding: 32px 0;
 }
 
@@ -460,12 +469,14 @@ button {
     padding-bottom: 12px;
     padding-left: 24px;
     padding-right: 24px;
+    border: 1px solid #e7e9fc
 }
 
 .modal-bt:hover,
 .modal-bt:focus {
     color: #FFFFFF;
     background-color: #404BBF;
+    border: 1px solid transparent;
 }
 
 .image_services {
