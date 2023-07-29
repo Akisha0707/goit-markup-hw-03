@@ -126,7 +126,6 @@ button {
 
 }
 
-
 .page-nav {
     display: flex;
     align-items: center;
@@ -151,8 +150,7 @@ button {
 }
 
 .tagline-section {
-    padding-bottom: 120px;
-    padding: 188px 0;
+     padding: 188px 0;
 }
 
 .color-tagline {
@@ -165,10 +163,7 @@ button {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    padding-top: 150px;
-    padding-bottom: 48px;
-    padding-left: 300px;
-    padding-right: 300px;
+    max-width: 496px;
 }
 
 .modal-btn {
@@ -201,6 +196,18 @@ button {
     padding: 120px 0;
 }
 
+.visually-hidden_main {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .info_quality {
     display: flex;
     align-items: baseline;
@@ -489,7 +496,7 @@ button {
 }
 
 .card {
-    flex-basis: calc((100%-48px)/3);
+    width: calc((100%-48px)/3);
 }
 
 .description_img {
