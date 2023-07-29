@@ -29,19 +29,6 @@ button {
     cursor: pointer;
 }
 
-visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .page-body {
     font-family: Roboto, sans-serif;
     color: var(--cloud, #434455);
@@ -52,6 +39,18 @@ visually-hidden {
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid #e7e9fc
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
 }
 
 .container {
@@ -66,6 +65,10 @@ visually-hidden {
     list-style: none;
 }
 
+.link {
+    text-decoration: none;
+}
+
 .logo {
     font-family: Raleway, sans-serif;
     color: var(--iris, #4d5ae5);
@@ -78,20 +81,12 @@ visually-hidden {
     margin-right: 76px;
 }
 
-.info-element:not(:last-child) {
-    margin-right: 40px;
-}
-
-.adress-elem {
-    margin-right: 40px;
-}
-
-.link {
-    text-decoration: none;
-}
-
 .studio {
     color: var(--navyblue, #2e2f42);
+}
+
+.info-element:not(:last-child) {
+    margin-right: 40px;
 }
 
 .element {
@@ -102,13 +97,13 @@ visually-hidden {
     letter-spacing: 0.02em;
 }
 
+.adr {
+    font-style: normal;
+}
+
 .element:hover,
 .element:focus {
     color: #404bbf
-}
-
-.adr {
-    font-style: normal;
 }
 
 .adress-elem {
@@ -116,6 +111,7 @@ visually-hidden {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-right: 40px;
 }
 
 .contact {
@@ -130,18 +126,6 @@ visually-hidden {
 .contact:hover,
 .contact:focus {
     color: #404bbf;
-}
-
-.page-header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.page-nav {
-    display: flex;
-    align-items: center;
 }
 
 .info {
@@ -209,8 +193,6 @@ visually-hidden {
     padding: 120px 0;
 }
 
-
-
 .info_quality {
     display: flex;
     align-items: baseline;
@@ -221,7 +203,6 @@ visually-hidden {
 .qual-list {
     width: calc((100% - 72px) / 4);
     margin-bottom: 8px;
-
 }
 
 .quality-name {
@@ -271,7 +252,7 @@ visually-hidden {
 .info_photo {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 24px;
 }
 
 .employers_color {
@@ -288,10 +269,6 @@ visually-hidden {
     margin-bottom: 72px;
 }
 
-.info_photo {
-    gap: 24px;
-}
-
 .team-photo {
     flex-basis: calc((100%-3*24px)/4);
     border-radius: 0px 0px 4px 4px;
@@ -299,10 +276,6 @@ visually-hidden {
 
 .employers_info {
     padding: 32px 0;
-}
-
-.info {
-    background-color: #FFFFFF;
 }
 
 .name {
